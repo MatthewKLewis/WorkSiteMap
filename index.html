@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sofia Site Map</title>
+		<style>
+			* {
+				font-family: monospace;
+			}
+			.wrapper {
+				margin: 1em;
+			}
+			.main-section {
+				margin: 0.5em;
+				padding: 0.5em;
+				border: 2px solid green;
+			}
+			.sub-section {
+				margin: 0.5em;
+				padding: 0.5em;
+				border: 1px solid blue;
+			}
+			.grid-2col {
+				display: grid;
+				grid-template-columns: 50% 50%;
+			}
+			.oj {
+				color: orangered;
+			}
+			.red {
+				color: red;
+			}
+			.purp {
+				color: purple;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper grid-2col">
+			<div class="main-section">
+				<h2>Assets</h2>
+				<div class="sub-section">
+					<h4>ASSETS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create</li>
+							<li>Add from other UseCase</li>
+							<li>Import from ARC</li>
+							<li>Import from File</li>
+							<li>Enable Alerts for All</li>
+							<li>Disable Alerts for All</li>
+							<li>Export to CSV</li>
+							<li>Upload and View Playback</li>
+						</ul>
+						<ul>
+							<li>Edit</li>
+							<li>Delete</li>
+							<li>Remove from this UC</li>
+							<li>Device Management</li>
+							<li>Unassign Devices</li>
+							<li>Deactivate Devices</li>
+							<li>Playback</li>
+							<li>Send Message</li>
+							<li>Export Selected to CSV</li>
+							<li class="oj">Unassign Devices (dupe!)</li>
+							<li>Set Status</li>
+							<li>LDAP Sync Settings</li>
+							<li>Start Assoc</li>
+							<li>End Assoc</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>GROUPS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create</li>
+						</ul>
+						<ul>
+							<li>Edit</li>
+							<li>Send Message to Group</li>
+							<li>Delete</li>
+							<li>Unassign Devices</li>
+							<li>Deactive Devices</li>
+							<li class="purp">Assign Responsibility for Group</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>DEPARTMENTS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create</li>
+						</ul>
+						<ul>
+							<li>Edit</li>
+							<li>Send Message to Group</li>
+							<li>Delete</li>
+							<li class="red">NO Unassign Devices?</li>
+							<li class="red">NO Deactive Devices?</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>STATUS SETS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create</li>
+						</ul>
+						<ul>
+							<li>Rename SS</li>
+							<li>Add Status to SS</li>
+							<li>Delete Status from Set</li>
+							<li>Delete SS</li>
+							<li>Add Legacy Status</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>MAINTENENCE</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Maintenance Schedule</li>
+						</ul>
+						<ul>
+							<li>Edit Maintenance Schedule</li>
+							<li>Delete Maintenance Schedule</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>CHECKPOINTS</h4>
+					<ul>
+						<li>Perform Check</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>Bed Master</h4>
+					<ul>
+						<li>Change Status</li>
+						<li>Open Breadcrumb</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Devices</h2>
+				<p>
+					One issue with devices 'under the use case' is that users might not
+					realize that they are looking at only the devices assigned to assets
+					in the UC.
+				</p>
+				<div class="sub-section">
+					<h4>DEVICES</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Device</li>
+							<li>Add Existing Devices (not customer assigned)</li>
+							<li>Import Devices from File</li>
+							<li>Update All Configurations</li>
+							<li>Export Devices CSV</li>
+						</ul>
+						<ul>
+							<li>Device Settings</li>
+							<li>Update Configuration</li>
+							<li>Select Configuration</li>
+							<li>Update Phone Number</li>
+							<li>Cancel Pending Configs</li>
+							<li>Send Commands</li>
+							<li>Update Firmware</li>
+							<li>Export Selected Devices CSV</li>
+							<li>Unassign Devices</li>
+							<li>Deactivate Device</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>TESTING MODE</h4>
+				</div>
+				<div class="sub-section">
+					<h4>COMMANDS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Delete All Commands</li>
+							<li>Export All Commands (CSV)</li>
+						</ul>
+						<ul>
+							<li>Delete Selected Command(s)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>CONFIGURATIONS</h4>
+					<div class="grid-2col">
+						<ul>
+							<li>Add Configuration</li>
+							<li>ARC Connection</li>
+						</ul>
+						<ul>
+							<li>Edit Configuration</li>
+							<li>Remove Configuration(s)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-section">
+					<h4>SETTINGS</h4>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Alerts</h2>
+				<p>
+					Alerts can also confuse clients, if they don't understand that this
+					view shows alerts only for assets under the use case. There also is
+					NOT a table for alerts from the main dashboard, though there is the
+					alerts bell popup.
+				</p>
+				<div class="grid-2col">
+					<ul>
+						<li>Export All Alerts</li>
+						<li>Export Searched Alerts</li>
+						<li>Close All Alerts</li>
+						<li>Manage Log Entries</li>
+						<li>Upload and view Alert Playback</li>
+					</ul>
+					<ul>
+						<li>Alert Playback</li>
+						<li>Close Selected Alerts</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Reports</h2>
+				<div class="sub-section">
+					<h4>REPORTS</h4>
+					<ul>
+						<li>Run Report</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>REPORT SCHEDULES</h4>
+					<ul>
+						<li>Run Report (schedule)</li>
+					</ul>
+					<ul>
+						<li>Enable</li>
+						<li>Disable</li>
+						<li class="red">No delete?</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Map Realtime</h2>
+				<ul>
+					<li>Choose Map</li>
+					<li>Render Map</li>
+					<li>Render Assets</li>
+					<li>Render Events</li>
+					<li>Render Changes from Socket</li>
+					<li>Follow Asset to new map</li>
+					<li>Open 'Breadcrumb'</li>
+					<li class="red">Assign Bed</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Rule Composer</h2>
+				<ul>
+					<li>Create Rule</li>
+				</ul>
+				<ul>
+					<li>Edit Rule</li>
+					<li>Duplicate Rule</li>
+					<li>Delete Rule</li>
+					<li>Enable Rule</li>
+					<li>Disable Rule</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Infrastructure</h2>
+				<div class="sub-section">
+					<h4>INFRASTRUCTURE</h4>
+					<ul>
+						<li>Create Infrastructure</li>
+						<li>Add Existing Infrastructure</li>
+						<li>Add Infrastructure from file</li>
+						<li>Export Infrastructure</li>
+						<li>Cancel Pending Configs</li>
+						<li>Reset all Configs</li>
+						<li>Update all Configs</li>
+						<li>Update all Location</li>
+					</ul>
+					<ul>
+						<li>Edit</li>
+						<li>Replace</li>
+						<li>Send Commands</li>
+						<li>Update Firmware</li>
+						<li>Cancel Pending Configs</li>
+						<li>Delete Infrastructure</li>
+						<li>Enable</li>
+						<li>Disable</li>
+						<li>Monitor</li>
+						<li>Unmonitor</li>
+						<li>Infrastructure Settings</li>
+						<li>Update Configurations</li>
+						<li>Select Configuration</li>
+						<li>Cancel Pending Configurations</li>
+					</ul>
+				</div>
+				<div class="sub-section red">
+					<h4>MAP VIEW</h4>
+					<p>Candidate for deletion IMO</p>
+				</div>
+				<div class="sub-section">
+					<h4>GROUPS</h4>
+					<ul>
+						<li>Create Group</li>
+					</ul>
+					<ul>
+						<li>Edit Group</li>
+						<li>Delete Group(s)</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>CONFIGURATIONS</h4>
+					<ul>
+						<li>Create Infra Config</li>
+					</ul>
+					<ul>
+						<li>Edit Infra Config</li>
+						<li>Remove Infra Config</li>
+					</ul>
+				</div>
+				<div class="sub-section red">
+					<h4>DEFAULT CONFIGURATIONS</h4>
+					<p>Jonathan has questions about these</p>
+				</div>
+				<div class="sub-section red">
+					<h4>GENERAL SETTINGS</h4>
+					<p>Perhaps better elsewhere - main settings?</p>
+					<ul>
+						<li>Enable Alerts</li>
+						<li>Enable Low Batt Notifs</li>
+					</ul>
+				</div>
+				<div class="sub-section red">
+					<h4>ALERTS</h4>
+					<p>Nothing to be done.</p>
+				</div>
+				<div class="sub-section">
+					<h4>MONITORING</h4>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Map Editor</h2>
+				<div class="sub-section">
+					<h4>INTEGRATIONS</h4>
+					<ul>
+						<li>ARC</li>
+						<li>Cisco CMX</li>
+						<li>Meraki</li>
+						<li>Mist</li>
+						<li>Aruba</li>
+						<li>Cisco Spaces</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>HIERARCHY</h4>
+					<ul>
+						<li>Site</li>
+						<li>Building</li>
+						<li>Map - Image</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>ZONE</h4>
+					<ul>
+						<li>Add Zone (Rect / Poly)</li>
+						<li>Move Zone</li>
+						<li>Edit Zone</li>
+						<li>Rename Zone</li>
+						<li>Delete Zone</li>
+						<li>Add to Zone Group</li>
+						<li>Remove from Zone Group</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>INFRA</h4>
+					<ul>
+						<li>Add</li>
+						<li>Edit</li>
+						<li>Move and Edit</li>
+						<li>Delete</li>
+						<li>Rename</li>
+						<li>Add to Infra</li>
+						<li class="red">Deselect All</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>ZONE GROUPS</h4>
+					<ul>
+						<li>Add</li>
+						<li>Add Zones to Group</li>
+						<li>Delete</li>
+						<li>Rename</li>
+						<li>Remove Zones from Group</li>
+						<li class="red">Deselect All</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>INFRA GROUPS</h4>
+					<ul>
+						<li>Add</li>
+						<li>Delete</li>
+						<li>Rename</li>
+						<li>Remove</li>
+						<li class="red">Deselect All</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>SETTINGS</h4>
+					<ul>
+						<li>Change Scale</li>
+						<li>Change Image</li>
+						<li>Change Algorithm</li>
+						<li>AoA Service Start</li>
+						<li>AoA Service Stop</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Users</h2>
+				<div class="sub-section">
+					<h4>USERS</h4>
+					<ul>
+						<li>Create User</li>
+						<li>Import Users from file</li>
+						<li>Export Users CSV</li>
+					</ul>
+					<ul>
+						<li>Edit User</li>
+						<li>Edit Password</li>
+						<li>Assign Role to User</li>
+						<li>Lock / Unlock</li>
+						<li>Delete User</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h4>ROLES</h4>
+					<ul>
+						<li>Create Role</li>
+					</ul>
+					<ul>
+						<li>Edit Role</li>
+						<li>Delete Role</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-section">
+				<h2>Company Information</h2>
+				<ul>
+					<li>Edit Contact Info</li>
+					<li>Add License</li>
+					<li>Manage Appliations</li>
+					<li>Manage Integrations</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Debug</h2>
+				<ul>
+					<li>Load Data</li>
+					<li>Location Valid</li>
+					<li>Rule Valid</li>
+					<li>Filter by Device</li>
+					<li>Filter by Item</li>
+					<li>Filter by Processor</li>
+					<li>Filter by Report Reason</li>
+					<li>Filter by Route</li>
+					<li>Filter by Infra</li>
+					<li>Export</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Firmware</h2>
+				<ul>
+					<li>Import Firmware</li>
+				</ul>
+				<ul>
+					<li>Assign Firmware</li>
+					<li>Delete Firmware</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Alerts Bell</h2>
+				<ul>
+					<li>Acknowledge w/ log</li>
+					<li>Additional Log Entries / Custom / By whom</li>
+					<li>Close</li>
+					<li>Send Message</li>
+					<li>Current Location</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Persistent Alerts</h2>
+				<ul>
+					<li>Acknowledge</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Sub Settings</h2>
+				<p>Varies by use case...</p>
+			</div>
+			<div class="main-section">
+				<h2>Settings</h2>
+				<ul>
+					<li>Edit Settings</li>
+					<li>Reset Default Password Reqs</li>
+					<li>Edit 2FA</li>
+					<li>Edit LDAP</li>
+				</ul>
+			</div>
+			<div class="main-section">
+				<h2>Dashboard</h2>
+				<p>Ugly stimulsoft thing that I have always washed my hands of.</p>
+			</div>
+			<div class="main-section">
+				<h2>Alert Metrics</h2>
+				<p>Ugly stimulsoft thing that I have always washed my hands of.</p>
+			</div>
+		</div>
+	</body>
+</html>
