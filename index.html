@@ -8,18 +8,23 @@
 			* {
 				font-family: monospace;
 			}
+			body {
+				margin: 0;
+			}
 			.wrapper {
-				margin: 1em;
+				background-color: gray;
 			}
 			.main-section {
-				margin: 0.5em;
+				margin: 2em;
 				padding: 0.5em;
-				border: 2px solid green;
+				background-color: rgb(192, 192, 192);
+				border: 2px solid rgb(0, 0, 0);
 			}
 			.sub-section {
 				margin: 0.5em;
 				padding: 0.5em;
-				border: 1px solid blue;
+				background-color: white;
+				border: 1px solid rgb(0, 0, 0);
 			}
 			.grid-2col {
 				display: grid;
@@ -238,14 +243,16 @@
 				</div>
 				<div class="sub-section">
 					<h4>REPORT SCHEDULES</h4>
-					<ul>
-						<li>Run Report (schedule)</li>
-					</ul>
-					<ul>
-						<li>Enable</li>
-						<li>Disable</li>
-						<li class="red">No delete?</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Run Report (schedule)</li>
+						</ul>
+						<ul>
+							<li>Enable</li>
+							<li>Disable</li>
+							<li class="red">No delete?</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="main-section">
@@ -263,47 +270,51 @@
 			</div>
 			<div class="main-section">
 				<h2>Rule Composer</h2>
-				<ul>
-					<li>Create Rule</li>
-				</ul>
-				<ul>
-					<li>Edit Rule</li>
-					<li>Duplicate Rule</li>
-					<li>Delete Rule</li>
-					<li>Enable Rule</li>
-					<li>Disable Rule</li>
-				</ul>
+				<div class="grid-2col">
+					<ul>
+						<li>Create Rule</li>
+					</ul>
+					<ul>
+						<li>Edit Rule</li>
+						<li>Duplicate Rule</li>
+						<li>Delete Rule</li>
+						<li>Enable Rule</li>
+						<li>Disable Rule</li>
+					</ul>
+				</div>
 			</div>
 			<div class="main-section">
 				<h2>Infrastructure</h2>
 				<div class="sub-section">
 					<h4>INFRASTRUCTURE</h4>
-					<ul>
-						<li>Create Infrastructure</li>
-						<li>Add Existing Infrastructure</li>
-						<li>Add Infrastructure from file</li>
-						<li>Export Infrastructure</li>
-						<li>Cancel Pending Configs</li>
-						<li>Reset all Configs</li>
-						<li>Update all Configs</li>
-						<li>Update all Location</li>
-					</ul>
-					<ul>
-						<li>Edit</li>
-						<li>Replace</li>
-						<li>Send Commands</li>
-						<li>Update Firmware</li>
-						<li>Cancel Pending Configs</li>
-						<li>Delete Infrastructure</li>
-						<li>Enable</li>
-						<li>Disable</li>
-						<li>Monitor</li>
-						<li>Unmonitor</li>
-						<li>Infrastructure Settings</li>
-						<li>Update Configurations</li>
-						<li>Select Configuration</li>
-						<li>Cancel Pending Configurations</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Infrastructure</li>
+							<li>Add Existing Infrastructure</li>
+							<li>Add Infrastructure from file</li>
+							<li>Export Infrastructure</li>
+							<li>Cancel Pending Configs</li>
+							<li>Reset all Configs</li>
+							<li>Update all Configs</li>
+							<li>Update all Location</li>
+						</ul>
+						<ul>
+							<li>Edit</li>
+							<li>Replace</li>
+							<li>Send Commands</li>
+							<li>Update Firmware</li>
+							<li>Cancel Pending Configs</li>
+							<li>Delete Infrastructure</li>
+							<li>Enable</li>
+							<li>Disable</li>
+							<li>Monitor</li>
+							<li>Unmonitor</li>
+							<li>Infrastructure Settings</li>
+							<li>Update Configurations</li>
+							<li>Select Configuration</li>
+							<li>Cancel Pending Configurations</li>
+						</ul>
+					</div>
 				</div>
 				<div class="sub-section red">
 					<h4>MAP VIEW</h4>
@@ -311,23 +322,27 @@
 				</div>
 				<div class="sub-section">
 					<h4>GROUPS</h4>
-					<ul>
-						<li>Create Group</li>
-					</ul>
-					<ul>
-						<li>Edit Group</li>
-						<li>Delete Group(s)</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Group</li>
+						</ul>
+						<ul>
+							<li>Edit Group</li>
+							<li>Delete Group(s)</li>
+						</ul>
+					</div>
 				</div>
 				<div class="sub-section">
 					<h4>CONFIGURATIONS</h4>
-					<ul>
-						<li>Create Infra Config</li>
-					</ul>
-					<ul>
-						<li>Edit Infra Config</li>
-						<li>Remove Infra Config</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Infra Config</li>
+						</ul>
+						<ul>
+							<li>Edit Infra Config</li>
+							<li>Remove Infra Config</li>
+						</ul>
+					</div>
 				</div>
 				<div class="sub-section red">
 					<h4>DEFAULT CONFIGURATIONS</h4>
@@ -430,28 +445,32 @@
 				<h2>Users</h2>
 				<div class="sub-section">
 					<h4>USERS</h4>
-					<ul>
-						<li>Create User</li>
-						<li>Import Users from file</li>
-						<li>Export Users CSV</li>
-					</ul>
-					<ul>
-						<li>Edit User</li>
-						<li>Edit Password</li>
-						<li>Assign Role to User</li>
-						<li>Lock / Unlock</li>
-						<li>Delete User</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Create User</li>
+							<li>Import Users from file</li>
+							<li>Export Users CSV</li>
+						</ul>
+						<ul>
+							<li>Edit User</li>
+							<li>Edit Password</li>
+							<li>Assign Role to User</li>
+							<li>Lock / Unlock</li>
+							<li>Delete User</li>
+						</ul>
+					</div>
 				</div>
 				<div class="sub-section">
 					<h4>ROLES</h4>
-					<ul>
-						<li>Create Role</li>
-					</ul>
-					<ul>
-						<li>Edit Role</li>
-						<li>Delete Role</li>
-					</ul>
+					<div class="grid-2col">
+						<ul>
+							<li>Create Role</li>
+						</ul>
+						<ul>
+							<li>Edit Role</li>
+							<li>Delete Role</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="main-section">
@@ -480,13 +499,15 @@
 			</div>
 			<div class="main-section">
 				<h2>Firmware</h2>
-				<ul>
-					<li>Import Firmware</li>
-				</ul>
-				<ul>
-					<li>Assign Firmware</li>
-					<li>Delete Firmware</li>
-				</ul>
+				<div class="grid-2col">
+					<ul>
+						<li>Import Firmware</li>
+					</ul>
+					<ul>
+						<li>Assign Firmware</li>
+						<li>Delete Firmware</li>
+					</ul>
+				</div>
 			</div>
 			<div class="main-section">
 				<h2>Alerts Bell</h2>
